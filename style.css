@@ -1,0 +1,130 @@
+*{
+    margin: 0px;   
+    border: 0px;
+    padding: 0px;
+}
+
+@media screen and (width > 800px) {
+    #content #links {
+        order: 2;
+    }    
+    #content #table {
+        order: 3;
+    }
+}
+
+body{
+    background-color: rgb(145, 201, 228);
+    font-family: mv boli;
+    text-align: center;
+    
+}
+
+header {
+    background-color: antiquewhite;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    flex: 1;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+nav {
+    order: 1;
+}
+
+#links {
+    order: 3;
+}
+
+#links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+#links ul li {
+    width: inherit;
+}
+
+#table {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#form {
+    order: 4;
+}
+
+#form form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+}
+   
+#logo{
+    height: 100px;
+    width: 100px;
+    mix-blend-mode: multiply;
+}
+
+#pic{
+    mix-blend-mode: multiply; 
+}
+h1{
+    color:rgb(40, 20, 20);
+}    
+
+.block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.block div{
+    min-height: 30px;
+}
+
+
+table{
+    text-align: center; 
+}
+tr:nth-child(odd) {
+    background: #666; 
+    color: #fff; 
+   } 
+tr:nth-child(even) {
+    background-color: rgb(200, 176, 176); 
+    color: #fff; 
+   } 
+table, td {
+  border: 1px solid #333;
+}
+
+thead, tfoot {
+  background-color: #333;
+  color: #fff;
+}
+
+footer {
+    order: 5;
+    background-color: #7478df;
+    text-align: center; 
+    width: 99%;   
+    font-size: 15px;
+    font-weight: bold;
+    color: #fafaff;  
+ }
